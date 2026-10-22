@@ -22,9 +22,9 @@ export default function Footer() {
             <p className="tag">The AI front desk for local businesses.</p>
           </div>
           <div>
-            <h4>
+            <h3>
               <b>01</b> Product
-            </h4>
+            </h3>
             <ul>
               <li>
                 <a href="#features">Features</a>
@@ -41,9 +41,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4>
+            <h3>
               <b>02</b> Use cases
-            </h4>
+            </h3>
             <ul>
               <li>
                 <a href="#use-cases">Clinics</a>
@@ -60,9 +60,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4>
+            <h3>
               <b>03</b> Company
-            </h4>
+            </h3>
             <ul>
               <li>
                 <a href="#top">About</a>
@@ -82,9 +82,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4>
+            <h3>
               <b>04</b> Newsletter
-            </h4>
+            </h3>
             <Newsletter />
           </div>
         </div>

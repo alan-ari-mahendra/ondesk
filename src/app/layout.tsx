@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Sans, IBM_Plex_Mono } from "next/font/google";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const instrumentSans = Instrument_Sans({
@@ -15,15 +16,24 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Ondesk | The AI front desk for local businesses",
   description:
     "Ondesk answers your website chat, WhatsApp and Instagram DMs 24/7, books appointments into your calendar and follows up with every lead. Set up in one afternoon. Try it free for 14 days.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
     type: "website",
     title: "Ondesk | The AI front desk for local businesses",
     description:
       "Answers every chat, WhatsApp and DM in seconds, books straight into your calendar and follows up while you work. 14 days free, no credit card.",
-    url: "https://ondesk.example/",
+    url: SITE_URL,
     siteName: "Ondesk",
   },
   twitter: {
@@ -48,7 +58,7 @@ const jsonLd = {
       operatingSystem: "Web",
       description:
         "Ondesk is an AI front desk for local service businesses. It answers website chat, WhatsApp and Instagram DMs 24/7, books appointments into your calendar, qualifies leads and follows up no-shows.",
-      url: "https://ondesk.example/",
+      url: SITE_URL,
       offers: {
         "@type": "AggregateOffer",
         lowPrice: "49",
@@ -65,8 +75,8 @@ const jsonLd = {
     {
       "@type": "Organization",
       name: "Ondesk Inc.",
-      url: "https://ondesk.example/",
-      logo: "https://ondesk.example/logo.svg",
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo.svg`,
     },
     {
       "@type": "FAQPage",

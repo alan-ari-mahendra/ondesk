@@ -81,7 +81,7 @@ ul{margin:0;padding:0;list-style:none}
 /* ============ announcement ============ */
 .announce{background:var(--black);color:#fff;font-family:var(--mono);font-size:12.5px;letter-spacing:.02em}
 .announce .wrap{display:flex;align-items:center;justify-content:center;gap:14px;min-height:40px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
-.announce .tag{display:inline-block;background:var(--blue);color:#fff;padding:2px 8px;border-radius:3px;font-weight:600;font-size:11px}
+.announce .tag{display:inline-block;background:var(--blue-deep);color:#fff;padding:2px 8px;border-radius:3px;font-weight:600;font-size:11px}
 .announce a{color:var(--sky);text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:44px;padding:0 4px}
 
 /* ============ nav ============ */
@@ -446,8 +446,8 @@ ul{margin:0;padding:0;list-style:none}
 .footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.4fr;gap:32px;padding-bottom:48px;border-bottom:1px solid var(--line-dark)}
 .footer .logo{color:#fff}
 .footer .tag{margin-top:12px;color:rgba(255,255,255,.6);font-size:15px;max-width:26ch}
-.footer h4{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:14px;letter-spacing:.08em}
-.footer h4 b{color:var(--sky);margin-right:8px}
+.footer h3{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5);font-weight:500;margin-bottom:14px;letter-spacing:.08em}
+.footer h3 b{color:var(--sky);margin-right:8px}
 .footer li a{display:inline-flex;align-items:center;min-height:44px;padding:0;text-decoration:none;color:rgba(255,255,255,.85);font-size:15px}
 .footer li a:hover{color:var(--sky)}
 .news{display:flex;gap:8px;margin-top:4px}
@@ -475,7 +475,7 @@ ul{margin:0;padding:0;list-style:none}
   .marks{grid-template-columns:repeat(3,1fr)}
   .marks div:nth-child(3n){border-right:0}
   .marks div:nth-child(-n+3){border-bottom:1px solid var(--line)}
-  .between .wrap{grid-template-columns:1fr}
+  .between .wrap.two{grid-template-columns:1fr}
   .fgrid{grid-template-columns:repeat(2,1fr)}
   .f:nth-child(3n){border-right:1px solid var(--line)}
   .f:nth-child(2n){border-right:0}
